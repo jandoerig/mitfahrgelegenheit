@@ -76,7 +76,6 @@ C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\bin\de\System.Web.Razor.
 C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\bin\de\System.Web.WebPages.resources.dll
 C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\bin\de\System.Web.WebPages.Deployment.resources.dll
 C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\bin\de\System.Web.WebPages.Razor.resources.dll
-C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\obj\Debug\transportApp.csprojAssemblyReference.cache
 C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\obj\Debug\transportApp.csproj.CoreCompileInputs.cache
 C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\obj\Debug\transportApp.csproj.CopyComplete
 C:\Users\jando\Projects\mitfahrgelegenheit\transportApp\obj\Debug\transportApp.dll
