@@ -23,11 +23,11 @@ namespace transportApp
                 url: "{controller}/{action}",
                 defaults: new { controller = "Eventinfo", action = "eventinfo" }
             );
-            /*routes.MapRoute(
-                name: "Login",
-                url: "{action}",
-                defaults: new { controller = "Login", action = "login" }
-            );*/
-        }
+			routes.MapRoute(
+				name: "Login",
+				url: "{controller}/{action}",
+				defaults: new { controller = "Login", action = "Login" }
+			);
+		}
     }
 }

@@ -63,6 +63,7 @@ h3 {
     margin-top: -5vh;
     margin-left: 10vw;
 }
+
 .arrow-left {
     height: 80px;
     margin-top: 5px;
@@ -78,4 +79,38 @@ h3 {
     width: 700px;
     background-color: blue;
     margin-left: -300px;
+}
+
+.login-input {
+    border: none;
+    height: 70px;
+    font-size: 30px;
+    outline: none;
+    text-align: center;
+    color: blue;
+}
+
+.login-input::placeholder {
+    color: blue;
+}
+
+.login-input:first-child{
+    margin-bottom: 20px;
+}
+.form {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#login-div {
+    width: 100%;
+}
+#login-button {
+
+    float: right;
+    padding: 10px;
 }
