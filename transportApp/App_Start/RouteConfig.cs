@@ -16,12 +16,12 @@ namespace transportApp
             routes.MapRoute(
                 name: "Default",
                 url: "{action}",
-                defaults: new { controller = "Eventübersicht", action = "eventübersicht", id = UrlParameter.Optional }
+                defaults: new { controller = "Eventübersicht", action = "eventübersicht" }
             );
             routes.MapRoute(
                 name: "Login",
                 url: "{action}",
-                defaults: new { controller = "Login", action = "login", id = UrlParameter.Optional }
+                defaults: new { controller = "Login", action = "login" }
             );
         }
     }
