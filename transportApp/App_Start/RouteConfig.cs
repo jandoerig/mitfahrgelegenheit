@@ -15,8 +15,8 @@ namespace transportApp
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Eventübersicht", action = "Eventübersicht", id = UrlParameter.Optional }
+                url: "{action}",
+                defaults: new { controller = "Eventübersicht", action = "eventübersicht", id = UrlParameter.Optional }
             );
         }
     }

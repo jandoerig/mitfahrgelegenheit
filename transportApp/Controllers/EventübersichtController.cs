@@ -9,7 +9,7 @@ namespace transportApp.Controllers
     public class EventübersichtController : Controller
     {
         // GET: Eventübersicht
-        public ActionResult Eventübersicht()
+        public ActionResult eventübersicht()
         {
             return View();
         }
