@@ -1,14 +1,18 @@
 ﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Login";
 }
 
-@{
-    ViewBag.Title = "Index";
-}
 
-<h2>Transport-APP</h2>
-<div class="form">
-    <input class="login-input" type="text" name="username" value="" placeholder="USERNAME" />
-    <input class="login-input" type="text" name="password" value="" placeholder="PASSWORD" />
+<div class="menu-container">
+    <a href="/Eventübersicht/eventübersicht"><img src="../../assets/arrow-left.png" alt="arrow left" class="arrow-left" /></a>
 </div>
-<button type="submit" id="login-button">Anmelden</button>
+<div class="content">
+    <div class="form">
+        <input class="login-input" type="text" name="username" value="" placeholder="USERNAME" />
+        <input class="login-input" type="password" name="password" value="" placeholder="PASSWORD" />
+        <button type="submit" class="login-button">Anmelden</button>
+    </div>
+</div>
+
+
+

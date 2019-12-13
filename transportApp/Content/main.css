@@ -129,3 +129,14 @@ h3 {
     border: none;
     border-radius: 10px;
 }
+
+.login-button {
+    height: 60px;
+    width: 400px;
+    background-color: #341FFF;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    border: none;
+    border-radius: 10px;
+}
