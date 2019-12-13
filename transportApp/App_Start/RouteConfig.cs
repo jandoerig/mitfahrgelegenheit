@@ -18,6 +18,11 @@ namespace transportApp
                 url: "{action}",
                 defaults: new { controller = "Eventübersicht", action = "eventübersicht", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Login",
+                url: "{action}",
+                defaults: new { controller = "Login", action = "login", id = UrlParameter.Optional }
+            );
         }
     }
 }
