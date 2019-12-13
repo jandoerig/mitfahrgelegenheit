@@ -26,7 +26,7 @@ namespace transportApp
 			routes.MapRoute(
 				name: "Login",
 				url: "{controller}/{action}",
-				defaults: new { controller = "Login", action = "Login" }
+				defaults: new { controller = "Login", action = "login" }
 			);
 		}
     }

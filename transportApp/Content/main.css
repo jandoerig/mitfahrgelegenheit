@@ -110,7 +110,22 @@ h3 {
     width: 100%;
 }
 #login-button {
-
     float: right;
     padding: 10px;
+}
+
+.event-information {
+    margin-left: 100px;
+    margin-top: 127px;
+
+}
+.select-event-button {
+    height: 60px;
+    width: 100px;
+    background-color: #341FFF;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    border: none;
+    border-radius: 10px;
 }
