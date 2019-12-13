@@ -15,14 +15,19 @@ namespace transportApp
 
             routes.MapRoute(
                 name: "Default",
-                url: "{action}",
+                url: "{controller}/{action}",
                 defaults: new { controller = "Eventübersicht", action = "eventübersicht" }
             );
             routes.MapRoute(
+                name: "Eventinfo",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Eventinfo", action = "eventinfo" }
+            );
+            /*routes.MapRoute(
                 name: "Login",
                 url: "{action}",
                 defaults: new { controller = "Login", action = "login" }
-            );
+            );*/
         }
     }
 }
