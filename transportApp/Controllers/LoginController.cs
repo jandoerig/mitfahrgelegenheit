@@ -9,7 +9,7 @@ namespace transportApp.Controllers
     public class LoginController : Controller
     {
 		// GET: Login
-		public ActionResult Login()
+		public ActionResult login()
 		{
 			return View();
 		}
