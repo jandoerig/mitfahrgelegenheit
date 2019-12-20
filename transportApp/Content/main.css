@@ -16,6 +16,9 @@ body {
 a {
     text-decoration: none;
 }
+button > a {
+    color: white;
+}
 h1 {
     font-size: 80px;
     margin-top: 0;
@@ -45,9 +48,6 @@ h3 {
     display: flex;
     flex-direction: row;
 }
-.listing {
-    margin-top: -9.5vh;
-}
 .event-listing {
     display: flex;
     flex-direction: row;
@@ -66,7 +66,8 @@ h3 {
 
 .arrow-left {
     height: 80px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .event-title {
     transform-origin: top left;
@@ -79,6 +80,7 @@ h3 {
     height: 500px;
     width: 700px;
     background-color: blue;
+    margin-left: 40px;
 }
 
 .login-input {
@@ -119,9 +121,9 @@ h3 {
     margin-top: 127px;
 
 }
-.select-event-button {
+.event-button {
     height: 60px;
-    width: 100px;
+    width: 100%;
     background-color: #341FFF;
     color: white;
     font-size: 20px;
@@ -143,7 +145,7 @@ h3 {
     margin-left: 550px;
 }
 .side-title {
-    width: 3%;
+    width: 1%;
 }
 .car-listing {
     margin-top: 0;
@@ -165,22 +167,110 @@ h3 {
     flex-direction: column;
 }
 .anmelden {
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 input {
     border: none;
     font-size: 40px;
+    color: #232368;
+}
+input::placeholder {
+    color: #3535a1;
 }
 .input-and-line + .input-and-line {
     margin-top: 35px;
 }
-.line {
+.input-line {
     border-top-style: solid;
     border-top-width: 3px;
+    border-top-color: #232368;
+    width: 30%;
+    transition: 1s;
+}
+.input-and-line:hover > .input-line {
+    transition: 1s;
+    width: 60%;
 }
 .submit-button {
     margin-bottom: 0;
-    margin-top: auto;
+    margin-top: 450px;
     margin-right: 0;
     margin-left: auto;
+}
+.listing-line {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #232368;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 20%;
+    transition: 1s;
+}
+.car-listing-line {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #232368;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 20%;
+    transition: 1s;
+}
+.last-line {
+    margin-bottom: 0;
+}
+.event-information-line {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #232368;
+    margin-top: 0;
+    margin-bottom: 25px;
+    width: 30%;
+    transition: 1s;
+}
+.event-information:hover > .event-information-line {
+    width: 60%;
+    transition: 1s;
+}
+.listing-car:hover > .car-listing-line {
+    width: 60%;
+    transition: 1s;
+}
+
+.listing-text:hover + .listing-line {
+    width: 40%;
+    transition: 1s
+}
+
+.listing-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.listing {
+    margin-top: -20px;
+}
+
+.listing-car {
+    transition: 1s;
+}
+
+.listing-box + .listing-box {
+    margin-top: 20px;
+}
+.activeCar {
+    margin-left: 40px;
+    transition-duration: 1s;
+}
+.reserve-car {
+    margin-top: 20px;
+}
+.listing {
+    margin-left: 20px;
+    height: 500px;
+    width: 500px;
+    overflow-x: auto;
+}
+.listing::-webkit-scrollbar {
+    width: 0 !important
 }
