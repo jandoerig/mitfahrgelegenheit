@@ -120,6 +120,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AutoanmeldenController.cs" />
+    <Compile Include="Controllers\AutoübersichtController.cs" />
     <Compile Include="Controllers\EventinfoController.cs" />
     <Compile Include="Controllers\EventübersichtController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -166,6 +168,8 @@
     <Content Include="Views\Eventübersicht\eventübersicht.cshtml" />
     <Content Include="Views\Eventinfo\eventinfo.cshtml" />
     <Content Include="Views\Login\login.cshtml" />
+    <Content Include="Views\Autoübersicht\autoübersicht.cshtml" />
+    <Content Include="Views\Autoanmelden\autoanmelden.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

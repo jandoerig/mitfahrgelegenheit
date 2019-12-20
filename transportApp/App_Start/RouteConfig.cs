@@ -28,6 +28,16 @@ namespace transportApp
 				url: "{controller}/{action}",
 				defaults: new { controller = "Login", action = "login" }
 			);
-		}
+            routes.MapRoute(
+                name: "Autoübersicht",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Autoübersicht", action = "autoübersicht" }
+            );
+            routes.MapRoute(
+                name: "Auto anmelden",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Autoanmelden", action = "autoanmelden" }
+             );
+        }
     }
 }
