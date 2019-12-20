@@ -16,6 +16,15 @@ body {
 a {
     text-decoration: none;
 }
+a:visited {
+    color: #341FFF
+}
+h3 > a:visited {
+    color: #232368
+}
+button > a:visited {
+    color: white;
+}
 button > a {
     color: white;
 }
@@ -34,11 +43,16 @@ h2 {
     margin-top: 20px;
 }
 h3 {
-    font-size: 30px;
+    font-size: 50px;
     color: #232368;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3 + h3 {
+    margin-top: 20px;
 }
 .content {
-    margin-left: 20px;
+    margin-left: 70px;
     margin-right: 20px;
     margin-top: 0;
     display: flex;
@@ -62,6 +76,7 @@ h3 {
     width: 50%;
     margin-top: -5vh;
     margin-left: 10vw;
+    margin-right: 70px;
 }
 
 .arrow-left {
@@ -72,7 +87,7 @@ h3 {
 .event-title {
     transform-origin: top left;
     transform: translateY(420px) rotate(-90deg);
-    font-size: 25px;
+    font-size: 35px;
     width: 500px;
     right: 200px;
 }
@@ -118,18 +133,21 @@ h3 {
 
 .event-information {
     margin-left: 100px;
-    margin-top: 127px;
-
+    margin-top: 0;
 }
 .event-button {
     height: 60px;
     width: 100%;
     background-color: #341FFF;
     color: white;
-    font-size: 20px;
+    font-size: 50px;
     font-family: "Nunito Sans", sans-serif;
     border: none;
     border-radius: 10px;
+    height: 65px;
+}
+.go-further-button {
+    margin-top: 100px;
 }
 
 .login-button {
@@ -150,9 +168,7 @@ h3 {
 .car-listing {
     margin-top: 0;
     margin-bottom: 0;
-}
-.listing1 {
-    margin-top: 30px;
+    font-size: 45px;
 }
 .buttons {
     margin-bottom: 0;
@@ -219,19 +235,6 @@ input::placeholder {
 .last-line {
     margin-bottom: 0;
 }
-.event-information-line {
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-top-color: #232368;
-    margin-top: 0;
-    margin-bottom: 25px;
-    width: 30%;
-    transition: 1s;
-}
-.event-information:hover > .event-information-line {
-    width: 60%;
-    transition: 1s;
-}
 .listing-car:hover > .car-listing-line {
     width: 60%;
     transition: 1s;
@@ -268,7 +271,7 @@ input::placeholder {
 .listing {
     margin-left: 20px;
     height: 500px;
-    width: 500px;
+    width: auto;
     overflow-x: auto;
 }
 .listing::-webkit-scrollbar {
