@@ -21,3 +21,8 @@
     margin-left: 30px;
     margin-bottom: 0;
 }
+.menu-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}

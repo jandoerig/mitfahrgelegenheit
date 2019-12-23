@@ -66,11 +66,7 @@ h3 + h3 {
     display: flex;
     flex-direction: row;
 }
-.menu-container {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
+
 .arrow-down {
     height: 100%;
 }
