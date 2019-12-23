@@ -14,6 +14,13 @@ namespace transportApp.Controllers
 		{
 			return View();
 		}
+        public ActionResult logout() {
+            Session["username"] = null;
+            Session["password"] = null;
+
+            return RedirectToAction("", "eventübersicht");
+        }
+
 		[HttpPost]
 		public ActionResult login(string username, string password)
 		{

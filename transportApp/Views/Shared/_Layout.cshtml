@@ -9,10 +9,43 @@
     @Styles.Render("~/Content/main.css")
 </head>
 <body>
+    <div class="menu-container">
+        @if (App.mainTitle == "EVENT ÜBERSICHT")
+        {
+            <h1 class="main-title">@App.mainTitle</h1>
+        }
+        else
+        {
+            <a href="@App.arrowBackRoute"><img src="../../assets/arrow-left.png" alt="arrow left" class="arrow-left" /></a>
+            <h1 class="main-title">@App.mainTitle</h1>
+        }
+
+        @if (Session["username"] == null && App.mainTitle != "LOGIN")
+        {
+            <h2 class="login-register-title"><a href="/Login/login">LOGIN</a></h2>
+        }
+        else if (App.mainTitle == "LOGIN" && Session["username"] == null)
+        {
+        }
+        else
+        {
+            <div class="logged-in-container">
+                <h2 class="logout"><a href="/Login/logout">LOGOUT @Session["username"]</a></h2>
+            </div>
+        }
+    </div>
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        $(document).ready(function() {
+            $('.listing-car').click(function () {
+                $('.listing-car').not(this).removeClass('activeCar');
+                $(this).toggleClass('activeCar');
+            });
+        });
+    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

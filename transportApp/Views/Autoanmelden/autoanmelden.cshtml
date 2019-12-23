@@ -1,37 +1,34 @@
 ﻿@{
     ViewBag.Title = "Auto anmelden";
+    App.mainTitle = "AUTO ANMELDEN";
+    App.arrowBackRoute = "/Autoübersicht/autoübersicht";
 }
 
-    <div class="menu-container">
-         <a href="/Autoübersicht/autoübersicht"><img src="../../assets/arrow-left.png" alt="arrow left" class="arrow-left" /></a>
-        <h1 class="main-title">AUTO REGISTRATION</h1>
-        <h2 class="login-register-title"><a href="/login">LOGOUT</a></h2>
+<div class="content">
+    <div class="side-title">
+        <h2 class="event-title">CHLAUSTURNIER FLAWIL</h2>
     </div>
-    <div class="content">
-        <div class="side-title">
-            <h2 class="event-title">CHLAUSTURNIER FLAWIL</h2>
-        </div>
-        <div class="anmelden">
-            <form class="anmelde-form" action="/" method="post">
-                <div class="input-and-line">
-                    <input type="text" name="name" placeholder="FAHRERNAME" />
-                    <div class="input-line"></div>
-                </div>
-                <div class="input-and-line">
-                    <input type="text" name="name" placeholder="TREFFPUNKT" />
-                    <div class="input-line"></div>
-                </div>
-                <div class="input-and-line">
-                    <input type="text" name="name" placeholder="FREIE PLÄTZE" />
-                    <div class="input-line"></div>
-                </div>
-                <div class="input-and-line">
-                    <input type="text" name="name" placeholder="ABFAHRTSZEIT" />
-                    <div class="input-line"></div>
-                </div>
-            </form>
-        </div>
-        <div class="submit-button">
-            <button class="event-button">ANMELDEN</button>
-        </div>
+    <div class="anmelden">
+        <form class="anmelde-form" action="/" method="post">
+            <div class="input-and-line">
+                <input type="text" name="name" placeholder="FAHRERNAME" />
+                <div class="input-line"></div>
+            </div>
+            <div class="input-and-line">
+                <input type="text" name="name" placeholder="TREFFPUNKT" />
+                <div class="input-line"></div>
+            </div>
+            <div class="input-and-line">
+                <input type="text" name="name" placeholder="FREIE PLÄTZE" />
+                <div class="input-line"></div>
+            </div>
+            <div class="input-and-line">
+                <input type="text" name="name" placeholder="ABFAHRTSZEIT" />
+                <div class="input-line"></div>
+            </div>
+        </form>
     </div>
+    <div class="submit-button">
+        <button class="event-button">HINZUFÜGEN</button>
+    </div>
+</div>
