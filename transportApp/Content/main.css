@@ -5,6 +5,7 @@
 @import "app/eventübersicht.css";
 @import "app/eventinfo.css";
 @import "app/menu.css";
+@import "app/eventregistration.css";
 
 :root {
     --main-title-color: #341FFF;

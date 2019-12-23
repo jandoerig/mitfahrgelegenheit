@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="content">
+    <div class="anmelden">
+        <form class="anmelde-form" action="/" method="post" id="form">
+            <div class="input-and-line">
+                <input class="add-event-input" type="text" name="eventname" placeholder="EVENTNAME" />
+                <div class="input-line"></div>
+            </div>
+            <div class="input-and-line">
+                <input class="add-event-input" type="text" name="treffpunkt" placeholder="TREFFPUNKT" />
+                <div class="input-line"></div>
+            </div>
+            <div class="input-and-line">
+                <input class="add-event-input" type="text" name="datum" placeholder="DATUM" />
+                <div class="input-line"></div>
+            </div>
+            <div class="input-and-line">
+                <input class="add-event-input" type="text" name="location" placeholder="LOCATION" />
+                <div class="input-line"></div>
+            </div>
+        </form>
+    </div>
+    <div class="submit-button">
+        <button type="submit" form="form" class="event-button">HINZUFÜGEN</button>
+    </div>
+</div>

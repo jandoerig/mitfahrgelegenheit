@@ -123,8 +123,10 @@
     <Compile Include="Controllers\AutoanmeldenController.cs" />
     <Compile Include="Controllers\AutoübersichtController.cs" />
     <Compile Include="Controllers\EventinfoController.cs" />
+    <Compile Include="Controllers\EventRegistrationController.cs" />
     <Compile Include="Controllers\EventübersichtController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -133,6 +135,7 @@
   <ItemGroup>
     <Content Include="assets\arrow-down.png" />
     <Content Include="assets\arrow-left.png" />
+    <Content Include="Content\app\eventregistration.css" />
     <Content Include="Content\app\menu.css" />
     <Content Include="Content\app\eventinfo.css" />
     <Content Include="Content\app\eventübersicht.css" />
@@ -177,6 +180,8 @@
     <Content Include="Views\Login\login.cshtml" />
     <Content Include="Views\Autoübersicht\autoübersicht.cshtml" />
     <Content Include="Views\Autoanmelden\autoanmelden.cshtml" />
+    <Content Include="Views\EventRegistration\index.cshtml" />
+    <Content Include="Views\Registration\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
