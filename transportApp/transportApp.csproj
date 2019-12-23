@@ -133,10 +133,15 @@
   <ItemGroup>
     <Content Include="assets\arrow-down.png" />
     <Content Include="assets\arrow-left.png" />
+    <Content Include="Content\eventinfo.css" />
+    <Content Include="Content\eventübersicht.css" />
+    <Content Include="Content\autoanmelden.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\autoübersicht.css" />
+    <Content Include="Content\login.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

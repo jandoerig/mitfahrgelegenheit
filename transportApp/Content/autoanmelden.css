@@ -1,0 +1,43 @@
+﻿.anmelde-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.anmelden {
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+input {
+    border: none;
+    font-size: 40px;
+    color: #232368;
+}
+
+input::placeholder {
+  color: #3535a1;
+}
+
+.input-and-line + .input-and-line {
+    margin-top: 100px;
+}
+
+.input-line {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #232368;
+    width: 30%;
+    transition: 1s;
+}
+
+.input-and-line:hover > .input-line {
+    transition: 1s;
+    width: 60%;
+}
+
+.submit-button {
+    margin-bottom: 0;
+    margin-top: auto;
+    margin-right: 0;
+    margin-left: auto;
+}
