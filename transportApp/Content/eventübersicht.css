@@ -33,3 +33,6 @@
     background-color: lightslategrey;
     width: 50%;
 }
+.listing::-webkit-scrollbar {
+    width: 0 !important
+}

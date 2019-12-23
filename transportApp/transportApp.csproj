@@ -133,6 +133,7 @@
   <ItemGroup>
     <Content Include="assets\arrow-down.png" />
     <Content Include="assets\arrow-left.png" />
+    <Content Include="Content\menu.css" />
     <Content Include="Content\eventinfo.css" />
     <Content Include="Content\eventübersicht.css" />
     <Content Include="Content\autoanmelden.css" />
