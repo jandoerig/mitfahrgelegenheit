@@ -1,10 +1,10 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
-@import "login.css";
-@import "autoübersicht.css";
-@import "autoanmelden.css";
-@import "eventübersicht.css";
-@import "eventinfo.css";
-@import "menu.css";
+@import "app/login.css";
+@import "app/autoübersicht.css";
+@import "app/autoanmelden.css";
+@import "app/eventübersicht.css";
+@import "app/eventinfo.css";
+@import "app/menu.css";
 
 :root {
     --main-title-color: #341FFF;
