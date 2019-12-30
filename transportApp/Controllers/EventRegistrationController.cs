@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;	
 using System.Web.Mvc;
+using transportApp.Models;
 
 namespace transportApp.Controllers
 {
@@ -10,13 +11,15 @@ namespace transportApp.Controllers
     {
 		// GET: EventRegistration
 		[HttpGet]
-		public ActionResult Index()
+		public ActionResult eventregistration()
         {
+            
             return View();
         }
 		[HttpPost]
-		public ActionResult Index(string eventname, string treffpunkt, string datum, string location)
+		public ActionResult eventregistration(string eventname, string treffpunkt, string datum, string location)
 		{
+            EventModel.events.Add(new Event(eventname, treffpunkt, datum));
 			// return Content($"Hello {Session["username"].ToString()} Password {Session["password"].ToString()}");
 			return RedirectToAction("", "eventübersicht");
 		}

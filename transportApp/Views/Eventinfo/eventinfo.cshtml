@@ -6,17 +6,16 @@
 <div class="content">
     <div class="side-title">
         <div class="side-title-with-line">
-            <h2 class="event-title">CHLAUSTURNIER FLAWIL</h2>
+            <h2 class="event-title">@ViewBag.ClickedEvent.name</h2>
         </div>
     </div>
     <div class="event-map">
 
     </div>
     <div class="event-information">
-        <h3>19:00</h3>
-        <h3>27.02.2033</h3>
-        <h3>SENNRÜTI 16</h3>
+        <h3>@ViewBag.ClickedEvent.datetime</h3>
+        <h3>@ViewBag.ClickedEvent.location</h3>
         <h3>10 FREIE PLÄTZE</h3>
-        <button class="event-button go-further-button"><a href="/Autoübersicht/autoübersicht">WEITER</a></button>
+        <button class="event-button go-further-button"><a href="/Autoübersicht/autoübersicht/@ViewBag.ClickedEvent.name">WEITER</a></button>
     </div>
 </div>

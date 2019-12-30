@@ -1,63 +1,20 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Eventübersicht";
     App.mainTitle = "EVENT ÜBERSICHT";
 }
+
 <div class="content">
     <div class="event-listing">
         <img class="arrow-down" src="../../assets/arrow-down.png" alt="Arrow" />
         <div class="listing">
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
-            <div class="listing-box">
-                <h3 class="listing-text"><a href="/Eventinfo/eventinfo">Chlausturnier Flawil</a></h3>
-                <div class="listing-line"></div>
-            </div>
+            @foreach (var Event in ViewBag.List)
+            {
+                <div class="listing-box">
+                    <h3 class="listing-text"><a href="/Eventinfo/eventinfo/@Event.name">@Event.name</a></h3>
+                    <div class="listing-line"></div>
+                </div>
+            }
         </div>
     </div>
     <div class="map">

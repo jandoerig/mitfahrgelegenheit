@@ -20,8 +20,8 @@ namespace transportApp
             );
             routes.MapRoute(
                 name: "Eventinfo",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Eventinfo", action = "eventinfo" }
+                url: "{controller}/{action}/{parameter}",
+                defaults: new { controller = "Eventinfo", action = "eventinfo", parameter = "0" }
             );
 			routes.MapRoute(
 				name: "Login",
@@ -30,8 +30,8 @@ namespace transportApp
 			);
             routes.MapRoute(
                 name: "Autoübersicht",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Autoübersicht", action = "autoübersicht" }
+                url: "{controller}/{action}/{parameter}",
+                defaults: new { controller = "Autoübersicht", action = "autoübersicht", parameter = "0" }
             );
             routes.MapRoute(
                 name: "Auto anmelden",
@@ -41,7 +41,7 @@ namespace transportApp
 			routes.MapRoute(
 				name: "Event Registrieren",
 				url: "{controller}/{action}",
-				defaults: new { controller = "EventRegistration", action = "EventRegistration" }
+				defaults: new { controller = "EventRegistration", action = "eventregistration" }
 			);
 		}
     }
