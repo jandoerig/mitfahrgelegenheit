@@ -37,7 +37,12 @@ namespace transportApp
                 name: "Auto anmelden",
                 url: "{controller}/{action}",
                 defaults: new { controller = "Autoanmelden", action = "autoanmelden" }
-             );
-        }
+            );
+			routes.MapRoute(
+				name: "Event Registrieren",
+				url: "{controller}/{action}",
+				defaults: new { controller = "EventRegistration", action = "EventRegistration" }
+			);
+		}
     }
 }

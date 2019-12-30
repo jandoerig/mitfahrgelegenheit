@@ -15,8 +15,8 @@ namespace transportApp.Controllers
 			return View();
 		}
         public ActionResult logout() {
-            Session["username"] = null;
-            Session["password"] = null;
+			Session.Remove("username");
+			Session.Remove("password");
 
             return RedirectToAction("", "eventübersicht");
         }

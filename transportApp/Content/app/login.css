@@ -5,14 +5,15 @@
     outline: none;
     text-align: center;
     color: blue;
+    margin-bottom: 20px;
 }
 
 .login-input::placeholder {
     color: blue;
 }
 
-.login-input:first-child{
-    margin-bottom: 20px;
+.login-input:last-child{
+    margin-bottom: 0px;
 }
 .login-form {
     margin: auto;
