@@ -1,0 +1,38 @@
+﻿.event-listing {
+    display: flex;
+    flex-direction: row;
+    width: 50%
+}
+.listing {
+    margin-left: 20px;
+    height: 95%;
+    width: auto;
+    overflow-x: auto;
+}
+.listing-box + .listing-box {
+    margin-top: 20px;
+}
+.listing-text:hover + .listing-line {
+    width: 40%;
+    transition: 1s
+}
+.listing-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.listing-line {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #232368;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 20%;
+    transition: 1s;
+}
+.map {
+    background-color: lightslategrey;
+    width: 50%;
+}
+.listing::-webkit-scrollbar {
+    width: 0 !important
+}

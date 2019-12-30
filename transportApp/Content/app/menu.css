@@ -1,0 +1,28 @@
+﻿.main-title {
+    margin-bottom: 0;
+}
+.arrow-left {
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.login-register-title {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.logged-in-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.logout {
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+.menu-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}

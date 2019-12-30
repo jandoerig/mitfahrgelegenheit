@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/main.css")
+</head>
+<body>
+    <div class="menu-container">
+        @if (App.mainTitle == "EVENT ÜBERSICHT")
+        {
+            <h1 class="main-title">@App.mainTitle</h1>
+        }
+        else
+        {
+            <a href="@App.arrowBackRoute"><img src="../../assets/arrow-left.png" alt="arrow left" class="arrow-left" /></a>
+            <h1 class="main-title">@App.mainTitle</h1>
+        }
+
+        @if (Session["username"] == null && App.mainTitle != "LOGIN")
+        {
+            <h2 class="login-register-title"><a href="/Login/login">LOGIN</a></h2>
+        }
+        else if (App.mainTitle == "LOGIN" && Session["username"] == null)
+        {
+        }
+        else
+        {
+            <div class="logged-in-container">
+                <h2 class="logout"><a href="/Login/logout">LOGOUT @Session["username"]</a></h2>
+            </div>
+        }
+    </div>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/events")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

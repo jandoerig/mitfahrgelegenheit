@@ -1,0 +1,38 @@
+﻿.free-car-listing {
+    display: flex;
+    margin-left: 100px;
+    flex-direction: row;
+    width: 50%
+}
+.listing-car:hover > .car-listing-line {
+    width: 60%;
+    transition: 1s;
+}
+.listing-car {
+    transition: 1s;
+}
+.car-listing {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 45px;
+}
+.car-listing-line {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #232368;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 20%;
+    transition: 1s;
+}
+.reserve-car {
+    margin-top: 20px;
+}
+.buttons {
+    margin-bottom: 0;
+    margin-top: auto;
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}

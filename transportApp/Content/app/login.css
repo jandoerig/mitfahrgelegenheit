@@ -1,0 +1,40 @@
+﻿.login-input {
+    border: none;
+    height: 70px;
+    font-size: 30px;
+    outline: none;
+    text-align: center;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.login-input::placeholder {
+    color: blue;
+}
+
+.login-input:last-child{
+    margin-bottom: 0px;
+}
+.login-form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.login-button {
+    height: 60px;
+    width: 400px;
+    background-color: #341FFF;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0;
+    margin-top: 100px;
+    margin-right: 0;
+    margin-left: auto;
+}
