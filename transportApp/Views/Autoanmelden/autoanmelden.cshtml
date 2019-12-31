@@ -1,34 +1,38 @@
 ﻿@{
     ViewBag.Title = "Auto anmelden";
     App.mainTitle = "AUTO ANMELDEN";
-    App.arrowBackRoute = "/Autoübersicht/autoübersicht";
+    App.arrowBackRoute = "/Autoübersicht/autoübersicht/@ViewBag.ClickedEvent.name";
 }
 
 <div class="content">
     <div class="side-title">
-        <h2 class="event-title">CHLAUSTURNIER FLAWIL</h2>
+        <h2 class="event-title">@ViewBag.ClickedEvent.name</h2>
     </div>
     <div class="anmelden">
-        <form class="anmelde-form" action="/" method="post">
+        <form class="anmelde-form" id="form" action="autoanmelden" method="post">
             <div class="input-and-line">
-                <input class="add-car-input" type="text" name="name" placeholder="FAHRERNAME" />
+                <input class="add-car-input" type="text" name="drivername" placeholder="FAHRERNAME" />
                 <div class="input-line"></div>
             </div>
             <div class="input-and-line">
-                <input class="add-car-input" type="text" name="name" placeholder="TREFFPUNKT" />
+                <input class="add-car-input" type="text" name="pickup" placeholder="TREFFPUNKT" />
                 <div class="input-line"></div>
             </div>
             <div class="input-and-line">
-                <input class="add-car-input" type="text" name="name" placeholder="FREIE PLÄTZE" />
+                <input class="add-car-input" type="text" name="datetime" placeholder="PICKUP-TIME" />
                 <div class="input-line"></div>
             </div>
             <div class="input-and-line">
-                <input class="add-car-input" type="text" name="name" placeholder="ABFAHRTSZEIT" />
+                <input class="add-car-input" type="number" name="emptySeats" placeholder="FREIE PLÄTZE" />
+                <div class="input-line"></div>
+            </div>
+            <div class="input-and-line">
+                <input readonly class="add-car-input" type="text" name="eventname" value="@ViewBag.ClickedEvent.name" />
                 <div class="input-line"></div>
             </div>
         </form>
     </div>
     <div class="submit-button">
-        <button class="event-button">HINZUFÜGEN</button>
+        <button type="submit" form="form" class="event-button">HINZUFÜGEN</button>
     </div>
 </div>
