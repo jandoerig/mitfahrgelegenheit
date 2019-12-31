@@ -21,7 +21,7 @@ namespace transportApp
             routes.MapRoute(
                 name: "Eventinfo",
                 url: "{controller}/{action}/{parameter}",
-                defaults: new { controller = "Eventinfo", action = "eventinfo", parameter = "0" }
+                defaults: new { controller = "Eventinfo", action = "eventinfo"}
             );
 			routes.MapRoute(
 				name: "Login",
@@ -31,12 +31,12 @@ namespace transportApp
             routes.MapRoute(
                 name: "Autoübersicht",
                 url: "{controller}/{action}/{parameter}",
-                defaults: new { controller = "Autoübersicht", action = "autoübersicht", parameter = "0" }
+                defaults: new { controller = "Autoübersicht", action = "autoübersicht"}
             );
             routes.MapRoute(
                 name: "Auto anmelden",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Autoanmelden", action = "autoanmelden" }
+                url: "{controller}/{action}/{parameter}",
+                defaults: new { controller = "Autoanmelden", action = "autoanmelden", parameter = "0"}
             );
 			routes.MapRoute(
 				name: "Event Registrieren",

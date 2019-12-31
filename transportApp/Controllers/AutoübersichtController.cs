@@ -13,6 +13,7 @@ namespace transportApp.Controllers
         public ActionResult autoübersicht(string parameter)
         {
             ViewBag.ClickedEvent = EventModel.events.Find(ev => ev.name.Equals(parameter));
+            ViewBag.Cars = ViewBag.ClickedEvent.cars;
             return View();
         }
     }

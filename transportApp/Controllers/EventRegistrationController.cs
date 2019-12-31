@@ -19,7 +19,8 @@ namespace transportApp.Controllers
 		[HttpPost]
 		public ActionResult eventregistration(string eventname, string treffpunkt, string datum, string location)
 		{
-            EventModel.events.Add(new Event(eventname, treffpunkt, datum));
+            List<Car> cars = new List<Car>();
+            EventModel.events.Add(new Event(eventname, treffpunkt, datum, cars));
 			// return Content($"Hello {Session["username"].ToString()} Password {Session["password"].ToString()}");
 			return RedirectToAction("", "eventübersicht");
 		}

@@ -13,11 +13,11 @@ namespace transportApp.Models
         public string datetime { get; set; }
         public List<User> kids { get; set; }
 
-        public Car(string drivername, string pickupLocation, int emptySeats, string datetime)
+        public Car(string drivername, string pickupLocation, int seats, string datetime)
         {
             this.drivername = drivername;
             this.pickupLocation = pickupLocation;
-            this.emptySeats = emptySeats;
+            this.emptySeats = seats;
             this.datetime = datetime;
         }
 
