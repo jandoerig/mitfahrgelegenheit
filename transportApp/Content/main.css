@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+﻿@import url('https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap');
 @import "app/login.css";
 @import "app/autoübersicht.css";
 @import "app/autoanmelden.css";
@@ -16,7 +16,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito:400", sans-serif;
     background-color: #FDFDFD;
     color: #232368;
 }
@@ -38,6 +38,7 @@ button > a {
 h1 {
     font-size: 80px;
     margin-top: 0;
+    font-family: "Nunito:900", sans-serif;
     margin-left: 10px;
     color: #341FFF;
 }
@@ -50,7 +51,7 @@ h2 {
     margin-top: 20px;
 }
 h3 {
-    font-size: 50px;
+    font-size: 55px;
     color: #232368;
     margin-top: 0;
     margin-bottom: 0;
@@ -68,18 +69,27 @@ h3 + h3 {
     flex-direction: row;
 }
 
+.add-car-input {
+    font-size: 55px;
+}
+
 .arrow-down {
     height: 100%;
 }
 .event-title {
     transform-origin: top left;
     transform: translateY(420px) rotate(-90deg);
-    font-size: 35px;
+    font-size: 100px;
+    margin-top: 670px;
     width: 500px;
     right: 200px;
 }
 .event-button {
-    height: 60px;
+    height: 7vh !important;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
     width: 100%;
     background-color: #341FFF;
     color: white;
@@ -95,4 +105,7 @@ h3 + h3 {
 .activeCar {
     margin-left: 40px;
     transition-duration: 1s;
+}
+.add-event-input {
+    font-size: 55px;
 }

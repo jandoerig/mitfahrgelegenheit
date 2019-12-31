@@ -11,13 +11,13 @@ namespace transportApp.Controllers
     {
         // GET: Registration
 		[HttpGet]
-        public ActionResult Index()
+        public ActionResult register()
 		{
             return View();
         }
 
 		[HttpPost]
-		public ActionResult Index(string username, string password1, string password2)
+		public ActionResult register(string username, string password1, string password2)
 		{
 			if (username != "" && password1 != "" && password2 != "") {
 				Console.WriteLine(username+ " " + password1 + " " + password2);

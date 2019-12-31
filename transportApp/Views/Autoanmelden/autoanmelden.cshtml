@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Auto anmelden";
     App.mainTitle = "AUTO ANMELDEN";
-    App.arrowBackRoute = "/Autoübersicht/autoübersicht/@ViewBag.ClickedEvent.name";
+    App.arrowBackRoute = "/Autoübersicht/autoübersicht/" + @ViewBag.ClickedEvent.name;
 }
 
 <div class="content">
@@ -19,14 +19,14 @@
                 <div class="input-line"></div>
             </div>
             <div class="input-and-line">
-                <input class="add-car-input" type="text" name="datetime" placeholder="PICKUP-TIME" />
+                <input class="add-car-input" type="text" name="datetime" placeholder="ABFAHRTSZEIT" />
                 <div class="input-line"></div>
             </div>
             <div class="input-and-line">
                 <input class="add-car-input" type="number" name="emptySeats" placeholder="FREIE PLÄTZE" />
                 <div class="input-line"></div>
             </div>
-            <div class="input-and-line">
+            <div style="display: none;" class="input-and-line">
                 <input readonly class="add-car-input" type="text" name="eventname" value="@ViewBag.ClickedEvent.name" />
                 <div class="input-line"></div>
             </div>

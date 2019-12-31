@@ -10,11 +10,12 @@
 }
 .listing-car {
     transition: 1s;
+    margin-bottom: 20px;
 }
 .car-listing {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 45px;
+    font-size: 55px;
 }
 .car-listing-line {
     border-top-style: solid;

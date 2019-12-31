@@ -1,14 +1,16 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Register";    
+    App.mainTitle = "REGISTER";
+    App.arrowBackRoute = "/Login/login";
 }
 
 <div class="content">
-    <form action="/" class="login-form" method="POST">
+    <form action="register" class="login-form" method="POST">
         <input class="login-input" id="username" type="text" name="username" value="" placeholder="USERNAME" />
         <input class="login-input" id="password1" type="password" name="password1" value="" placeholder="PASSWORD" />
         <input class="login-input" id="password2" type="password" name="password2" value="" placeholder="CONFIRM PASSWORD" />
         <input type="submit" class="login-button">
-
     </form>
 </div>
 

@@ -43,6 +43,11 @@ namespace transportApp
 				url: "{controller}/{action}",
 				defaults: new { controller = "EventRegistration", action = "eventregistration" }
 			);
-		}
+            routes.MapRoute(
+                name: "Register",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Registration", action = "register" }
+            );
+        }
     }
 }

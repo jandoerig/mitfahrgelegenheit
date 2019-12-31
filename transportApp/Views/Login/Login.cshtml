@@ -3,14 +3,16 @@
     App.mainTitle = "LOGIN";
     App.arrowBackRoute = "/Eventübersicht/eventübersicht";
 }
-<div class="content">
-    <form action="/Login/login" class="login-form" method="POST">
-        <input class="login-input" id="username" type="text" name="username" value="" placeholder="USERNAME" />
-        <input class="login-input" id="password" type="password" name="password" value="" placeholder="PASSWORD" />
-        <input type="submit" class="login-button">
-
-    </form>
-</div>
+    <div class="content">
+        <form action="/Login/login" id="loginForm" class="login-form" method="POST">
+            <input class="login-input" id="username" type="text" name="username" value="" placeholder="USERNAME" />
+            <input class="login-input" id="password" type="password" name="password" value="" placeholder="PASSWORD" />
+        </form>
+        <div class="register-group">
+            <button class="event-button register-button"><a href="/Registration/register">REGISTRIEREN</a></button>
+            <input type="submit" form="loginForm" class="event-button" value="LOGIN">
+        </div>
+    </div>
 
 
 
