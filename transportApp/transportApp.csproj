@@ -205,6 +205,7 @@
     <Compile Include="Controllers\EventRegistrationController.cs" />
     <Compile Include="Controllers\EventübersichtController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -264,6 +265,7 @@
     <Content Include="Views\Autoübersicht\autoübersicht.cshtml" />
     <Content Include="Views\Autoanmelden\autoanmelden.cshtml" />
     <Content Include="Views\EventRegistration\eventregistration.cshtml" />
+    <Content Include="Views\Registration\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
